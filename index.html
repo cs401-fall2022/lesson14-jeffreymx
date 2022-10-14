@@ -6,28 +6,47 @@
     <title>TypeScript Quick Start Guide</title>
     <meta name = "description" conten = "">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <h1>JavaScript to TypeScript Quick Start</h1>
-    <p>Before proceeding with this document, it is important that you understand that 
-        TypeScript is built off of JavaScript.  TypeScript is everything you would 
-        expect to see in JavaScript with additional features added to improve 
-        usability.  </p>
-    <p>maybe a venn diagram type image here</p>
-    <p>The purpose of this document is help those of you who may be new to TypeScript, 
-        transition existing JavaScript code into TypeScript.  Before we do this, you 
-        may find it helpful to do a quick internet search explaining what TypeScript 
-        is.  Here are a couple of suggested videos</p>
-    <ul>
-        <li>Cool link to check out</li>
-        <li>Other link to check out</li>
-    </ul>
+    <div class = "tutorial">
+        <h1>JavaScript to TypeScript <br> <font size="4">a quickstart guide to migration</font></h1>
 
-    <p>Explicitness of TypeScript and why that is good.</p>
+        <div class="intro">Before proceeding with this document, it is important that you understand 
+        that TypeScript is built off of JavaScript.  TypeScript is everything you would expect to 
+        see in JavaScript with additional features added to improve usability.</div>
 
-    <p>Difference in files...</p>
+        <div class="venn"><br><img class="format" src ="/img/Venn.png"> </div>
+
+        <div class="detail"><br> The purpose of this document is help those of you who may be new to
+        TypeScript, transition existing JavaScript code into TypeScript.  Before we do this, you may 
+        find it helpful to do a quick internet search explaining what TypeScript is.  Here are a 
+        couple of suggested videos:</div>
+        
+        <div class="links">
+            <ul>
+                <li><a href="https://serokell.io/blog/why-typescript">Why you should choose 
+                TypeScript over JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Ap_LrI8Wibo">What is TypeScript?</a></li>
+            </ul>
+        </div>
+
+        <div class="heading" >Explicitness of TypeScript</div>
+        <div class="detail"><br>In JavaScript one can get away with not explicitly defining a 
+            variable type.  In TypeScript one must make type declarations for all variables.  This 
+            allows TypeScript to do a much better job at catching errors in code, especially if an 
+            incorrect type is trying to be used.<br><br></div>
+        <div class="code"><strong>JavaScript</strong><br>
+            <br>let variable = "Hello World";<br><br></div>
+        <div class="code"><strong>TypeScript</strong><br>
+            <br>let variable: string = "Hello World";<br><br></div>
+   
+        <div class="heading"><br>Migrating Files</div>
+        <div><br>TODO... I think this is the tricky part that needs to demo the swap</div>
+
+    </div>
 </body>
 
 </html>
