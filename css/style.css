@@ -37,16 +37,22 @@ html{
 .heading{
   font-weight: bold;
 }
-.code{
+.sampleCode{
   font-family: "Cascadia Mono";
-  text-align: left;
-  display: inline-block;
+  height: 150px;
+  width: 50%;
   background-color: rgb(221, 252, 221);
+  text-align: left;
   border-style: solid;
   border-width: 1px;
   border-color: green;
   padding: 10px;
   border-radius: 5px;
-  width: 45%;
-
+  font-size: 16px;
+}
+.steps{
+  text-align: left;
+}
+li{
+  padding: 5px;
 }

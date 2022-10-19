@@ -40,13 +40,32 @@
             variable type.  In TypeScript one must make type declarations for all variables.  This 
             allows TypeScript to do a much better job at catching errors in code, especially if an 
             incorrect type is trying to be used.<br><br></div>
-        <div class="code"><strong>JavaScript</strong><br>
-            <br>let variable = "Hello World";<br><br></div>
-        <div class="code"><strong>TypeScript</strong><br>
-            <br>let variable: string = "Hello World";<br><br></div>
-   
+        
+        <button id="code" class="sampleCode"><strong>JavaScript</strong><br><br>let variable = "Hello World";<br><br></button>
+        <div>Click above to toggle between JavaScript and TypeScript!</div>
+
         <div class="heading"><br>Migrating Files</div>
-        <div><br>TODO... I think this is the tricky part that needs to demo the swap</div>
+        <div class="steps">
+            <ol>
+                <li>Create a "build" folder.  It is recommended you have a "build" folder to keep your 
+                    TypeScript and JavaScript separate.</li>
+                <li>Set up a tsconfig.json file.  You can find basic examples on the internet. I used 
+                    <strong>TODO this one</strong> from class.  Make sure it specifies to outDir as "build/".</li>
+                <li>Make sure your HTML file specifies the pathway to the future JavaScript file that 
+                    will be created from your TypeScript file. </li>
+                <li>In Visual Studios you need to open the terminal.</li>
+                    <ol>
+                        <li type="a">Make sure node.js is installed <strong>(TODO link)</strong>. Install by running:
+                        <br><br><span class="sampleCode">npm install</span><br><br></li>
+                        <li type="a">Make sure you install the TypeScript package by running: <br><br>
+                            <span class="sampleCode">npm install -g typescript</span><br><br></li>
+                    </ol>
+                <li>In the command line of the terminal run:<br><br>
+                    <span class="sampleCode">tsc.cmd</span><br><br>
+                    This will automatically create your JavaScript files in the "build" folder you created.</li>
+                <li>Now go test your code in a browser!</li>
+            </div>
+
 
     </div>
 </body>
