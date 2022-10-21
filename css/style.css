@@ -39,8 +39,7 @@ html{
 }
 .sampleCode{
   font-family: "Cascadia Mono";
-  height: 150px;
-  width: 50%;
+    width: 50%;
   background-color: rgb(221, 252, 221);
   text-align: left;
   border-style: solid;

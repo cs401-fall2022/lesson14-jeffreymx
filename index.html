@@ -10,22 +10,20 @@
 
 </head>
 
-<script src="build/helloworld.js">window.test;</script>
-
 <body>
     <div class = "tutorial">
         <h1>JavaScript to TypeScript <br> <font size="4">a quickstart guide to migration</font></h1>
 
         <div class="intro">Before proceeding with this document, it is important that you understand 
-        that TypeScript is built off of JavaScript.  TypeScript is everything you would expect to 
-        see in JavaScript with additional features added to improve usability.</div>
+            that TypeScript is built off of JavaScript.  TypeScript is everything you would expect to 
+            see in JavaScript with additional features added to improve usability.</div>
 
         <div class="venn"><br><img class="format" src ="img/Venn.png"> </div>
 
         <div class="detail"><br> The purpose of this document is help those of you who may be new to
-        TypeScript, transition existing JavaScript code into TypeScript.  Before we do this, you may 
-        find it helpful to do a quick internet search explaining what TypeScript is.  Here are a 
-        couple of suggested links:</div>
+            TypeScript, transition existing JavaScript code into TypeScript.  Before we do this, you 
+            may find it helpful to do a quick internet search explaining what TypeScript is.  Here are 
+            a couple of suggested links:</div>
         
         <div class="links">
             <ul>
@@ -40,23 +38,31 @@
             variable type.  In TypeScript one must make type declarations for all variables.  This 
             allows TypeScript to do a much better job at catching errors in code, especially if an 
             incorrect type is trying to be used.<br><br></div>
-        
+   
+        <div>
         <button id="code" class="sampleCode"><strong>JavaScript</strong><br><br>let variable = "Hello World";<br><br></button>
+        </div>
         <div>Click above to toggle between JavaScript and TypeScript!</div>
 
         <div class="heading"><br>Migrating Files</div>
+
+        <div class="detail"><br>The following steps have been tested in Visual Studios using the 
+            Windows 10 Education operating system.<br></div>
+        
         <div class="steps">
             <ol>
                 <li>Create a "build" folder.  It is recommended you have a "build" folder to keep your 
                     TypeScript and JavaScript separate.</li>
                 <li>Set up a tsconfig.json file.  You can find basic examples on the internet. I used 
-                    <strong>TODO this one</strong> from class.  Make sure it specifies to outDir as "build/".</li>
+                    <a href="https://github.com/shanep/typescript-hello/blob/master/tsconfig.json"><strong>
+                        this one</strong></a> from class.  Make sure it specifies to outDir as "build/".</li>
                 <li>Make sure your HTML file specifies the pathway to the future JavaScript file that 
                     will be created from your TypeScript file. </li>
                 <li>In Visual Studios you need to open the terminal.</li>
                     <ol>
-                        <li type="a">Make sure node.js is installed <strong>(TODO link)</strong>. Install by running:
-                        <br><br><span class="sampleCode">npm install</span><br><br></li>
+                        <li type="a">Make sure node.js is installed <a href="https://nodejs.org/en/download/">
+                            <strong>(download)</strong></a>. Install by running:<br><br><span class="sampleCode">
+                            npm install</span><br><br></li>
                         <li type="a">Make sure you install the TypeScript package by running: <br><br>
                             <span class="sampleCode">npm install -g typescript</span><br><br></li>
                     </ol>
@@ -69,5 +75,7 @@
 
     </div>
 </body>
+
+<script src="build/helloworld.js">window.test;</script>
 
 </html>

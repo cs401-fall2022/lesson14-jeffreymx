@@ -6,9 +6,8 @@ function test() {
 }
 
 //I cannot figure out how to make the listener only apply to the button and not the whole page
-document./*getElementById("code").*/addEventListener("click", swapCode);
-
-function swapCode(){
+//Answered here https://stackoverflow.com/questions/21262693/addeventlistener-not-working-in-javascript
+document.getElementById("code").addEventListener("click", function(){
     let code1 = "<strong>JavaScript</strong><br><br>let variable = \"Hello World\";<br><br>";
     let code2 = "<strong>TypeScript</strong><br><br>let variable: string = \"Hello World\";<br><br>";
     let code = document.getElementById("code").innerHTML;
@@ -18,4 +17,4 @@ function swapCode(){
     else{
         document.getElementById("code").innerHTML = code1;
     }
-}
+});
