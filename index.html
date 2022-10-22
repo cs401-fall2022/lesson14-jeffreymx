@@ -7,20 +7,22 @@
     <meta name = "description" content = "">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.1.css">
 
 </head>
 
 <body>
     <div class = "tutorial">
-        <h1>JavaScript to TypeScript <br> <font size="4">a quickstart guide to migration</font></h1>
+        <h1>JavaScript to TypeScript</h1>
+        <div class="subtitle">a quickstart guide to migration</div>
 
         <div class="intro">Before proceeding with this document, it is important that you understand 
             that TypeScript is built off of JavaScript.  TypeScript is everything you would expect to 
             see in JavaScript with additional features added to improve usability.</div>
 
-        <div class="venn"><br><img class="format" src ="img/Venn.png"> </div>
+        <div class="venn"><img class="format" src="img/Venn.png" alt="venn diagram of relation"> </div>
 
-        <div class="detail"><br> The purpose of this document is help those of you who may be new to
+        <div class="detail"> The purpose of this document is help those of you who may be new to
             TypeScript, transition existing JavaScript code into TypeScript.  Before we do this, you 
             may find it helpful to do a quick internet search explaining what TypeScript is.  Here are 
             a couple of suggested links:</div>
@@ -34,48 +36,56 @@
         </div>
 
         <div class="heading" >Explicitness of TypeScript</div>
-        <div class="detail"><br>In JavaScript one can get away with not explicitly defining a 
+        <div class="detail">In JavaScript one can get away with not explicitly defining a 
             variable type.  In TypeScript one must make type declarations for all variables.  This 
             allows TypeScript to do a much better job at catching errors in code, especially if an 
-            incorrect type is trying to be used.<br><br></div>
+            incorrect type is trying to be used.</div>
    
         <div>
-        <button id="code" class="sampleCode"><strong>JavaScript</strong><br><br>let variable = "Hello World";<br><br></button>
+            <button id="code" class="sampleCode"><strong>JavaScript</strong><br><br>let variable = "Hello World";<br><br></button>
         </div>
         <div>Click above to toggle between JavaScript and TypeScript!</div>
 
-        <div class="heading"><br>Migrating Files</div>
+        <div class="heading">Migrating Files</div>
 
-        <div class="detail"><br>The following steps have been tested in Visual Studios using the 
-            Windows 10 Education operating system.<br></div>
+        <div class="detail">The following steps have been tested in Visual Studios using the 
+            Windows 10 Education operating system.</div>
         
         <div class="steps">
             <ol>
-                <li>Create a "build" folder.  It is recommended you have a "build" folder to keep your 
+                <li class="sp">Create a "build" folder.  It is recommended you have a "build" folder to keep your 
                     TypeScript and JavaScript separate.</li>
-                <li>Set up a tsconfig.json file.  You can find basic examples on the internet. I used 
+                <li class="sp">Set up a tsconfig.json file.  You can find basic examples on the internet. I used 
                     <a href="https://github.com/shanep/typescript-hello/blob/master/tsconfig.json"><strong>
                         this one</strong></a> from class.  Make sure it specifies to outDir as "build/".</li>
-                <li>Make sure your HTML file specifies the pathway to the future JavaScript file that 
+                <li class="sp">Make sure your HTML file specifies the pathway to the future JavaScript file that 
                     will be created from your TypeScript file. </li>
-                <li>In Visual Studios you need to open the terminal.</li>
+                <li>In Visual Studios you need to open the terminal.
                     <ol>
-                        <li type="a">Make sure node.js is installed <a href="https://nodejs.org/en/download/">
-                            <strong>(download)</strong></a>. Install by running:<br><br><span class="sampleCode">
-                            npm install</span><br><br></li>
-                        <li type="a">Make sure you install the TypeScript package by running: <br><br>
-                            <span class="sampleCode">npm install -g typescript</span><br><br></li>
-                    </ol>
-                <li>In the command line of the terminal run:<br><br>
-                    <span class="sampleCode">tsc.cmd</span><br><br>
-                    This will automatically create your JavaScript files in the "build" folder you created.</li>
+                        <li class="sub">Make sure node.js is installed <a href="https://nodejs.org/en/download/">
+                            <strong>(download)</strong></a>. Install by running:<div class="sampleCode">
+                            npm install</div></li>
+                        <li class="sub">Make sure you install the TypeScript package by running:
+                            <div class="sampleCode">npm install -g typescript</div></li>
+                    </ol></li>
+                <li class="sp">In the command line of the terminal run:
+                    <div class="sampleCode">tsc.cmd</div>
+                    <div>This will automatically create your JavaScript files in the "build" folder you created.</div></li>
                 <li>Now go test your code in a browser!</li>
-            </div>
+            </ol>
+        </div>
 
 
     </div>
-</body>
+<!--
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
+    <script src="test/test.js"></script>
+-->
 
-<script src="build/helloworld.js">window.test;</script>
+    <script src="build/helloworld.js"></script>
+
+</body>
 
 </html>

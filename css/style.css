@@ -2,6 +2,9 @@ html{
   font-family: Arial;
   background-color: teal;
 }
+.subtitle{
+  font-weight: bold;
+}
 .tutorial{
   text-align: center;
   border-style: solid;
@@ -11,6 +14,8 @@ html{
   background-color: beige;
  }
 .intro{
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: rgb(252, 228, 231);
   border-style: solid;
   border-color: red;
@@ -23,7 +28,9 @@ html{
   background-color: beige;
 }
 .detail{
+  margin-top: 20px;
   text-align: justify;
+  margin-bottom: 0px;
 }
 .format{
   height: 200px;
@@ -35,9 +42,12 @@ html{
   display: inline-block;
 }
 .heading{
+  margin-top: 20px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .sampleCode{
+  margin-top: 10px;
   font-family: "Cascadia Mono";
     width: 50%;
   background-color: rgb(221, 252, 221);
@@ -48,10 +58,19 @@ html{
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
+  margin-bottom:10px;
 }
 .steps{
   text-align: left;
 }
-li{
-  padding: 5px;
+.sp{
+  margin-bottom: 20px;
+}
+.sub{
+  margin-top: 20px;
+  list-style-type: lower-alpha;
+}
+.space{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
